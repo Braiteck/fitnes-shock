@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -163,7 +164,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -429,7 +430,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, .9);
 }
 
 
@@ -592,7 +593,7 @@ button
 
     border: 3px solid #e8e8e8;
     border-radius: 50%;
-    background: rgba(130,130,130,.36);
+    background: rgba(130, 130, 130, .36);
     box-shadow: 0 2px 3px 2px rgba(215, 215, 215, .26);
 
     justify-content: center;
@@ -3844,7 +3845,7 @@ header .menu .mini_modal .other:hover
 
     padding: 10px 10px 8px;
 
-    background: rgba(123,55,124,.92);
+    background: rgba(123, 55, 124, .92);
 }
 
 
@@ -5814,7 +5815,8 @@ footer .creator a img
     border: 1px solid #fff;
     border-radius: 8px;
     background: #fcf9ce;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, .1);;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, .1);
+    ;
 }
 
 
