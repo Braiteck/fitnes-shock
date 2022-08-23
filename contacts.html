@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#E62854">
+		<meta name="theme-color" content="#E62854">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+							<div class="name">Протеиновые<br> десерты</div>
+						</a>
+
+						<div class="data">
+							<div class="phone">
+								<a href="tel:+74954678436">+7 495 467 84 36</a>
+
+								<a href="/" class="whatsapp_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:info@fitnesshock.ru">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+									<span>info@fitnesshock.ru</span>
+								</a>
+							</div>
+
+							<button class="partner_btn modal_btn" data-content="#partner_modal">Стать партнёром</button>
+
+							<button class="mob_menu_btn">
+								<span></span>
+							</button>
+
+							<nav class="menu row">
+								<div class="item modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu_close"></use></svg>
+										<span>Каталог</span>
+									</button>
+
+									<div class="mini_modal" id="catalog_modal">
+										<div class="row">
+											<a href="/" class="category color1">
+												<div class="name">Печенье</div>
+
+												<div class="thumb">
+													<img data-src="images/tmp/category_thumb.png" alt="" class="lozad">
+												</div>
+											</a>
+
+											<a href="/" class="category color2">
+												<div class="name">Батончики</div>
+
+												<div class="thumb">
+													<img data-src="images/tmp/category_thumb2.png" alt="" class="lozad">
+												</div>
+											</a>
+
+											<a href="/" class="category color3">
+												<div class="name">Маффины</div>
+
+												<div class="thumb">
+													<img data-src="images/tmp/category_thumb3.png" alt="" class="lozad">
+												</div>
+											</a>
+
+											<div class="other">
+												<div><a href="/">Для перекуса для зала<br> к кофе</a></div>
+												<div><a href="/">Без глютена</a></div>
+
+												<div class="all_link">
+													<a href="/">
+														<span>Весь каталог</span>
+														<div class="icon">
+															<svg><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">О нас</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Полезный блог</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Амбассадоры</a>
+								</div>
+
+								<div class="item">
+									<a class="active">Контакты</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section id="mob_menu">
+					<div class="catalog">
+						<a href="/" class="category color1">
+							<div class="name">Печенье</div>
+
+							<div class="thumb">
+								<img data-src="images/tmp/category_thumb.png" alt="" class="lozad">
+							</div>
+						</a>
+
+						<a href="/" class="category color2">
+							<div class="name">Батончики</div>
+
+							<div class="thumb">
+								<img data-src="images/tmp/category_thumb2.png" alt="" class="lozad">
+							</div>
+						</a>
+
+						<a href="/" class="category color3">
+							<div class="name">Маффины</div>
+
+							<div class="thumb">
+								<img data-src="images/tmp/category_thumb3.png" alt="" class="lozad">
+							</div>
+						</a>
+
+						<div class="all_link">
+							<a href="/">
+								<span>Весь каталог</span>
+							</a>
+						</div>
+
+						<div class="other">
+							<div><a href="/">Для перекуса для зала к кофе</a></div>
+							<div><a href="/">Без глютена</a></div>
+						</div>
+					</div>
+
+
+					<div class="contacts">
+						<div class="phone">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+							
+							<a href="tel:+74954678436">+7 495 467 84 36</a>
+							
+							<a href="/" class="whatsapp_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+							</a>
+						</div>
+
+						<div class="email">
+							<a href="mailto:info@fitnesshock.ru">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+								<span>info@fitnesshock.ru</span>
+							</a>
+						</div>
+
+						<div class="socials">
+							<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep"></span>
+							<span class="current">Контакты</span>
+						</div>
+
+						<h1 class="page_title">Контакты</h1>
+					</div>
+				</section>
+
+
+				<section class="contacts_info block">
+					<div class="cont">
+						<div class="row">
+							<div class="section">
+								<div class="title">Отдел продаж</div>
+
+								<div class="item">
+									<div class="name">Horeca</div>
+
+									<div class="val">
+										<div class="manager">Артур Черненко</div>
+
+										<div class="email">
+											<a href="mailto:chernenko@fitnesshock.ru">chernenko@fitnesshock.ru</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="name">Спортпит</div>
+
+									<div class="val">
+										<div class="manager">Александра Старшова</div>
+
+										<div class="email">
+											<a href="mailto:a.starshova@fitnesshock.ru">a.starshova@fitnesshock.ru</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="name">Торговые сети</div>
+
+									<div class="val">
+										<div class="manager">Надежда Цай</div>
+
+										<div class="email">
+											<a href="mailto:n.tsay@fitnesshock.ru">n.tsay@fitnesshock.ru</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="section">
+								<div class="item">
+									<div class="title">Сотрудничество по рекламе</div>
+
+									<div class="val">
+										<div class="email">
+											<a href="mailto:info@fitnesshock.ru ">info@fitnesshock.ru </a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="title">Написать директору</div>
+
+									<div class="val">
+										<div class="email">
+											<a href="mailto:ceo@fitnesshock.ru">ceo@fitnesshock.ru</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="title">Отдел контроля качества</div>
+
+									<div class="val">
+										<div class="email">
+											<a href="mailto:info@fitnesshock.ru">info@fitnesshock.ru</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="section">
+								<div class="title">Почтовый адрес</div>
+
+								<div class="phone">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									<a href="tel:+74954678436">+7 495 467 84 36</a>
+									<img src="images/ic_whatsapp.png" alt="" class="whatsapp">
+								</div>
+
+								<div class="location">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+									<span>445021, г. Тольятти, а/я 3626</span>
+								</div>
+
+								<div class="requisites">
+									ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ<br> "ФИТНЕС ДЕСЕРТЫ"<br>
+									ИНН: 6324107033<br>
+									КПП: 632001001<br>
+									ОГРН: 1196313093888
+								</div>
+							</div>
+
+
+							<div class="section map_wrap">
+								<div id="map"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="action_form block">
+					<div class="cont">
+						<div class="data">
+							<div class="info">
+								<div class="title">Остались<br> вопросы?</div>
+
+								<div class="desc">Оставьте сообщение<br> и мы ответим Вам<br> в ближайшее время</div>
+							</div>
+
+							<form action="" class="form">
+								<div class="columns row">
+									<div class="line width1of3">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Имя">
+										</div>
+									</div>
+
+									<div class="line width1of3">
+										<div class="field">
+											<input type="tel" name="" value="" class="input" placeholder="Телефон">
+										</div>
+									</div>
+
+									<div class="line width1of3">
+										<div class="field">
+											<input type="email" name="" value="" class="input" placeholder="E-mail">
+										</div>
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<textarea name="" placeholder="Сообщение"></textarea>
+									</div>
+								</div>
+
+								<div class="bottom">
+									<div class="agree">Нажимая кнопку, вы даете <a href="/" target="_blank">солгасие на обработку своих персональных данных</a></div>
+
+									<button type="submit" class="submit_btn">Отправить</button>
+								</div>
+							</form>
+
+							<div class="bg lozad" data-background-image="images/tmp/bg_action_form.jpg"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+								<div class="name">Протеиновые десерты</div>
+							</div>
+
+							<div class="requisites">
+								ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ФИТНЕС ДЕСЕРТЫ"<br>
+								ИНН: 6324107033<br>
+								КПП: 632001001<br>
+								ОГРН: 1196313093888
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Информация для покупателей</div>
+
+							<div class="row">
+								<div class="items">
+									<div><a href="/">О нас</a></div>
+									<div><a href="/">О продукции</a></div>
+									<div><a href="/">Полезный блог</a></div>
+									<div><a href="/">Амбассадоры</a></div>
+									<div><a href="/">Контакты</a></div>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Партнёрам</a></div>
+									<div><a href="/">Акции</a></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col_center">
+							<div class="socials">
+								<div class="title">Мы в социальных сетях</div>
+
+								<div class="items">
+									<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="subscribe">
+								<div class="title">Подписаться на рассылку</div>
+
+								<form action="">
+									<input type="email" name="" value="" class="input" placeholder="Введите ваш e-mail">
+
+									<button type="submit" class="submit_btn">Ок!</button>
+
+									<div class="agree">Согласие на обработку персональных данных и политика конфиденциальности</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="contacts">
+							<div class="title">Контакты для связи</div>
+
+							<div class="item phone">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<a href="tel:+74951359299">+7 (495) 135-92-99</a>
+							</div>
+
+							<div class="item phone phone2">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone2"></use></svg>
+								<a href="tel:+89850992030">8 (985) 099-20-30</a>
+							</div>
+
+							<div class="item email">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+								<a href="mailto:sales@fitnesshock.ru">sales@fitnesshock.ru</a>
+							</div>
+
+							<div class="item location">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+								<span>Бульвар Ленина 23, Тольятти</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; 2021 Протеиновые десерты fitnesshock.online</div>
+
+						<div class="links">
+							<div><a href="/">Политика конфиденциальности</a></div>
+							<div><a href="/">Пользовательское соглашение</a></div>
+						</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">
+								<span>Разработка сайта:</span>
+								<img src="images/creator_logo.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="buttonUp">
+				<button>
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_accordion_arrow"></use></svg>
+				</button>
+			</div>
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="partner_modal">
+			<div class="modal_title">Стать партнёром</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line width1of3">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Имя">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="Телефон">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="email" name="" value="" class="input" placeholder="E-mail">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Город">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Название компании">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="ИНН">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="url" name="" value="" class="input" placeholder="Сайт">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" placeholder="Комментарий"></textarea>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<div class="agree">Нажимая кнопку, вы даете <a href="/" target="_blank">солгасие на обработку своих персональных данных</a></div>
+
+						<button type="submit" class="submit_btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+
+			<img src="images/bg_modal.png" alt="" class="bg">
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

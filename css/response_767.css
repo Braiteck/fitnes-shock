@@ -1,0 +1,594 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion .accordion_item .data
+    {
+        padding-right: 24px;
+    }
+
+
+
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        display: none !important;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        width: 160px;
+        margin-top: -6px;
+        margin-bottom: 0;
+    }
+
+    header .logo img
+    {
+        height: 72px;
+        margin: -10px;
+    }
+
+
+    header .data
+    {
+        width: calc(100% - 192px);
+        padding-top: 0;
+    }
+
+
+    header .partner_btn
+    {
+        width: 164px;
+    }
+
+
+    header .menu
+    {
+        width: calc(100% + 192px);
+        margin-top: 20px;
+        margin-left: -192px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .tabs
+    {
+        width: calc(100% + 12px);
+        margin-bottom: -8px;
+        margin-left: -12px;
+    }
+
+    .block_head .tabs button,
+    .block_head .tabs button + button
+    {
+        margin-bottom: 8px;
+        margin-left: 12px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .bottom .agree
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .slider .title
+    {
+        font-size: 26px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 320px;
+        padding-bottom: 44px;
+    }
+
+
+    .main_slider .slide .info
+    {
+        width: 240px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    .main_slider .slide .image
+    {
+        width: 100%;
+    }
+
+    .main_slider .slide .image img
+    {
+        position: absolute;
+        left: 80px;
+
+        max-width: none;
+        max-height: 280px;
+    }
+
+
+    .main_slider .swiper-container .arrows,
+    .main_slider .count
+    {
+        display: none;
+    }
+
+
+    .main_slider .swiper-container-horizontal > .swiper-pagination-bullets,
+    .main_slider .swiper-pagination-custom,
+    .main_slider .swiper-pagination-fraction
+    {
+        bottom: 28px;
+        left: 24px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .image
+    {
+        width: 100%;
+        margin-bottom: 28px;
+        padding-bottom: 65%;
+    }
+
+
+    .why_we .data
+    {
+        width: 100%;
+    }
+
+
+    .why_we .swiper-container
+    {
+        padding-bottom: 24px;
+    }
+
+
+
+    /*----------------------
+        Bloggers reviews
+    ----------------------*/
+    .bloggers_reviews .row > *
+    {
+        width: calc(50% - 16px);
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .row > *
+    {
+        width: calc(100% - 16px);
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .data .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .stats .data .item .val
+    {
+        font-size: 34px;
+    }
+
+
+
+    /*------------------
+        Already here
+    ------------------*/
+
+    .already_here .arrows
+    {
+        top: -68px;
+    }
+
+
+
+    /*---------------
+        Instagram
+    ---------------*/
+    .instagram .block_head .title a
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .instagram .row > *
+    {
+        width: calc(50% - 16px);
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .filter .cont > .row
+    {
+        margin-bottom: -16px;
+        margin-left: 0;
+    }
+
+    .filter .cont > .row > *
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+    .filter .cont > .row > *.type
+    {
+        margin-bottom: 8px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .head
+    {
+        margin-bottom: 24px;
+        padding-top: 0;
+    }
+
+    .category_info .head .name
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        width: calc(100% + 24px);
+        max-width: calc(100% + 24px);
+        min-height: 0;
+        margin-right: -24px;
+        padding: 16px 24px 16px 0;
+    }
+
+
+    .category_info .head .desc
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .section
+    {
+        padding: 24px;
+    }
+
+
+    .contacts_info .section .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .contacts_info .section .item .name,
+    .contacts_info .section .item .val
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contacts_info .section .item .manager
+    {
+        width: 176px;
+        padding-right: 16px;
+    }
+
+    .contacts_info .section .item .manager + .email
+    {
+        width: calc(100% - 176px);
+    }
+
+
+    .contacts_info .section.map_wrap
+    {
+        height: 400px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .stickers
+    {
+        display: none;
+    }
+
+
+    .product_info .images .big .slide a
+    {
+        width: 100%;
+        padding-bottom: 90%;
+    }
+
+
+    .product_info .data .product_name
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+    .product_info .data .get_price
+    {
+        margin-top: 12px;
+    }
+
+    .product_info .data .get_price .btn
+    {
+        width: 100%;
+    }
+
+    .product_info .data .get_price .exp
+    {
+        display: none;
+    }
+
+
+    .product_info .data .btns
+    {
+        margin-top: 12px;
+    }
+
+    .product_info .data .btns .btn
+    {
+        font-size: 16px;
+    }
+
+    .product_info .data .btns .btn span
+    {
+        display: flex;
+
+        height: 54px;
+        padding: 8px 8px 6px;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .section
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 24px;
+    }
+
+
+    .product_data .row > *.clear
+    {
+        margin: 0;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .data
+    {
+        padding: 0;
+
+        border-radius: 0;
+        background: none;
+    }
+
+
+    .advantages .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .advantages .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .advantages .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .advantages .row > *
+    {
+        display: inline-block;
+
+        width: 240px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .advantages .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*--------------------
+        Get price list
+    --------------------*/
+    .get_price_list .data > .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+    footer .bottom .links
+    {
+        width: 100%;
+        margin-top: 12px;
+
+        justify-content: center;
+    }
+
+
+    footer .creator
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 12px;
+
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
