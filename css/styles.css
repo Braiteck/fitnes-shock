@@ -5373,6 +5373,188 @@ header .menu .mini_modal .other:hover
 
 
 
+/*-------------
+    Prizzes
+-------------*/
+.prizzes
+{
+    position: relative;
+
+    padding: 60px 0 43px;
+
+    background: #76caf1;
+}
+
+
+.prizzes .block_title img
+{
+    display: block;
+
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.prizzes .draw_conditions
+{
+    display: flex;
+
+    margin-bottom: 25px;
+    padding: 70px 101px 73px 109px;
+
+    background: url(../images/bg_prizzes_draw_conditions.png) 50%/100% 100% no-repeat;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.prizzes .draw_conditions .data
+{
+    position: relative;
+
+    width: 483px;
+    max-width: 100%;
+    padding-top: 25px;
+}
+
+.prizzes .draw_conditions .data:after
+{
+    position: absolute;
+    right: -129px;
+    bottom: -72px;
+
+    display: block;
+
+    width: 211px;
+    height: 152px;
+
+    content: '';
+
+    background: url(../images/bg_prizzes_draw_conditions_arrow.svg) 0 0/100% 100% no-repeat;
+}
+
+
+.prizzes .draw_conditions .data .title
+{
+    color: #e30236;
+    font-family: var(--font_family3);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59px;
+
+    position: relative;
+}
+
+.prizzes .draw_conditions .data .title:before,
+.prizzes .draw_conditions .data .title:after
+{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-right: 21px;
+    margin-bottom: auto;
+
+    content: '';
+
+    background: url(../images/bg_prizzes_draw_conditions_title.svg) 0 0/100% 100% no-repeat;
+}
+
+.prizzes .draw_conditions .data .title:after
+{
+    right: auto;
+    left: 100%;
+
+    margin-right: 0;
+    margin-left: 21px;
+
+    transform: rotate(180deg);
+}
+
+
+.prizzes .draw_conditions .data .desc
+{
+    color: #141a3a;
+    font-family: var(--font_family3);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+
+    width: 464px;
+    max-width: 100%;
+    margin-top: 18px;
+}
+
+
+.prizzes .draw_conditions .form
+{
+    width: 402px;
+    max-width: 100%;
+    margin-left: auto;
+
+    --form_border_color: #c697c3;
+    --form_focus_color: #c697c3;
+    --form_placeholder_color: #333;
+}
+
+
+.prizzes .draw_conditions .form .title
+{
+    color: #141a3a;
+    font-family: var(--font_family3);
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+
+    margin-bottom: 6px;
+
+    text-align: center;
+}
+
+
+.prizzes .draw_conditions .form .input
+{
+    box-shadow: 0 9px 15px #e8e1e1;
+}
+
+
+.prizzes .draw_conditions .form .submit_btn
+{
+    width: 100%;
+}
+
+
+.prizzes .draw_conditions .form .agree
+{
+    color: #333;
+    font-size: 13px;
+    line-height: 130%;
+
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.prizzes .draw_conditions .form .agree a
+{
+    color: #2f738e;
+
+    text-decoration: none;
+}
+
+
+
 /*------------
     Footer
 ------------*/
