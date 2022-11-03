@@ -556,6 +556,361 @@
 
 
 
+    /*-------------------
+        Partners head
+    -------------------*/
+    .partners_head
+    {
+        padding: 60px 0 88px;
+    }
+
+
+    .partners_head .data
+    {
+        width: 100%;
+    }
+
+
+    .partners_head .title
+    {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+
+    .partners_head .btn
+    {
+        padding: 8px 32px;
+    }
+
+
+    .partners_head .big_title
+    {
+        font-size: 60px;
+        line-height: 40px;
+    }
+
+
+    .partners_head .img
+    {
+        width: auto;
+        min-width: 200px;
+    }
+
+
+
+    /*------------------
+        Partners why
+    ------------------*/
+    .partners_why
+    {
+        padding: 60px 0;
+    }
+
+
+    .partners_why .block_title
+    {
+        font-size: 32px;
+        line-height: 36px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .partners_why .block_title div:before,
+    .partners_why .block_title div:after
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .partners_why .row
+    {
+        margin-left: 0;
+    }
+
+    .partners_why .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .partners_why .item
+    {
+        font-size: 15px;
+
+        padding-left: 48px;
+    }
+
+    .partners_why .item .number:before
+    {
+        font-size: 48px;
+        line-height: 100%;
+
+        top: 0;
+    }
+
+    .partners_why .item .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+
+    /*--------------------------
+        Production warehouse
+    --------------------------*/
+    .production_warehouse
+    {
+        padding: 60px 0;
+    }
+
+
+    .production_warehouse .block_title
+    {
+        font-size: 32px;
+        line-height: 36px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .production_warehouse .block_title div:before,
+    .production_warehouse .block_title div:after
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .production_warehouse .image
+    {
+        width: 100%;
+        margin: -24px 0 24px;
+    }
+
+
+    .production_warehouse .data
+    {
+        width: 100%;
+    }
+
+
+    .production_warehouse .item .val,
+    .production_warehouse .item .val.big_h
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .production_warehouse .item .val span + span
+    {
+        margin-left: 28px;
+    }
+
+
+    .production_warehouse .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------------
+        Partners schema
+    ---------------------*/
+    .partners_schema
+    {
+        padding: 60px 0;
+    }
+
+
+    .partners_schema .block_title
+    {
+        font-size: 32px;
+        line-height: 36px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .partners_schema .block_title div:before,
+    .partners_schema .block_title div:after
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .partners_schema .schema
+    {
+        height: 440px;
+    }
+
+
+    .partners_schema .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .partners_schema .item:after
+    {
+        transform: scale(.6) rotate(30.33deg);
+    }
+
+    .partners_schema .item1:after
+    {
+        top: 0;
+
+        margin-left: 0;
+
+        transform: scale(.6) rotate(30.33deg);
+    }
+
+
+    .partners_schema .item2:after
+    {
+        bottom: -84px;
+
+        margin-left: -66px;
+
+        transform: scale(.6) rotate(101.68deg);
+    }
+
+
+    .partners_schema .item3
+    {
+        top: 260px;
+    }
+
+    .partners_schema .item3:after
+    {
+        bottom: -48px;
+
+        margin-right: -12px;
+
+        transform: scale(.6) rotate(-180deg);
+    }
+
+
+    .partners_schema .item4:after
+    {
+        top: 20px;
+
+        margin-right: 0;
+
+        transform: scale(.6) rotate(-149.67deg);
+    }
+
+
+    .partners_schema .item5
+    {
+        top: 260px;
+    }
+
+    .partners_schema .item5:after
+    {
+        margin-right: -66px;
+        margin-bottom: -24px;
+
+        transform: scale(.6) rotate(-78.32deg);
+    }
+
+
+    .partners_schema .item .number
+    {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+
+    .partners_schema .img1,
+    .partners_schema .img2,
+    .partners_schema .img3
+    {
+        width: 120px;
+    }
+
+
+    .partners_schema .bg
+    {
+        width: 200%;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .managers .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*--------------------
+        Partners order
+    --------------------*/
+    .partners_order .info
+    {
+        width: 100%;
+    }
+
+
+    .partners_order .title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .partners_order .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 20px;
+    }
+
+    .partners_order .desc br
+    {
+        display: none;
+    }
+
+
+    .partners_order .img
+    {
+        top: -40px;
+
+        width: 240px;
+    }
+
+
+    .partners_order .form .line
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .partners_order .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    .partners_order .form .agree
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -587,9 +942,4 @@
         align-content: flex-start;
         flex-wrap: wrap;
     }
-
-
-    /*-----------
-        PopUp
-    -----------*/
 }

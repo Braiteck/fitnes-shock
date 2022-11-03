@@ -850,6 +850,402 @@
 
 
 
+    /*-------------------
+        Partners head
+    -------------------*/
+    .partners_head
+    {
+        padding: 72px 0;
+    }
+
+
+    .partners_head .data
+    {
+        width: 436px;
+    }
+
+
+    .partners_head .title
+    {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+
+    .partners_head .desc
+    {
+        font-size: 15px;
+
+        width: 344px;
+    }
+
+
+    .partners_head .btn
+    {
+        margin-top: 32px;
+        padding: 8px 24px;
+    }
+
+
+    .partners_head .big_title
+    {
+        font-size: 80px;
+        line-height: 54px;
+    }
+
+
+    .partners_head .img
+    {
+        top: 0;
+        right: -88px;
+
+        width: 660px;
+    }
+
+
+
+    /*------------------
+        Partners why
+    ------------------*/
+    .partners_why
+    {
+        padding: 72px 0;
+    }
+
+
+    .partners_why .block_title
+    {
+        font-size: 36px;
+        line-height: 40px;
+
+        margin-bottom: 48px;
+    }
+
+
+    .partners_why .block_title div:before,
+    .partners_why .block_title div:after
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .partners_why .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+        padding: 0;
+    }
+
+    .partners_why .row > *
+    {
+        width: calc(50% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+
+    .partners_why .item
+    {
+        font-size: 16px;
+
+        padding-left: 52px;
+    }
+
+    .partners_why .item .number:before
+    {
+        font-size: 52px;
+    }
+
+    .partners_why .item .name
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+
+    /*--------------------------
+        Production warehouse
+    --------------------------*/
+    .production_warehouse
+    {
+        padding: 72px 0;
+    }
+
+
+    .production_warehouse .block_title
+    {
+        font-size: 36px;
+        line-height: 40px;
+
+        margin-bottom: 48px;
+    }
+
+
+    .production_warehouse .block_title div:before,
+    .production_warehouse .block_title div:after
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .production_warehouse .image
+    {
+        width: 340px;
+    }
+
+
+    .production_warehouse .data
+    {
+        width: calc(100% - 320px);
+    }
+
+
+    .production_warehouse .item + .item
+    {
+        margin-top: 24px;
+    }
+
+
+    .production_warehouse .item .val,
+    .production_warehouse .item .val.big_h
+    {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .production_warehouse .item .val sup
+    {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .production_warehouse .item .val span + span
+    {
+        margin-left: 32px;
+    }
+
+
+
+    /*---------------------
+        Partners schema
+    ---------------------*/
+    .partners_schema
+    {
+        padding: 72px 0;
+    }
+
+
+    .partners_schema .block_title
+    {
+        font-size: 36px;
+        line-height: 40px;
+
+        margin-bottom: 48px;
+    }
+
+
+    .partners_schema .block_title div:before,
+    .partners_schema .block_title div:after
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .partners_schema .schema
+    {
+        width: 100%;
+        height: 480px;
+    }
+
+
+    .partners_schema .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .partners_schema .item:after
+    {
+        transform: scale(.8) rotate(30.33deg);
+    }
+
+    .partners_schema .item1:after
+    {
+        transform: scale(.8) rotate(30.33deg);
+    }
+
+    .partners_schema .item2:after
+    {
+        bottom: -104px;
+
+        margin-left: -70px;
+
+        transform: scale(.8) rotate(101.68deg);
+    }
+
+    .partners_schema .item3:after
+    {
+        bottom: -50px;
+
+        margin-right: 20px;
+
+        transform: scale(.8) rotate(-180deg);
+    }
+
+    .partners_schema .item4:after
+    {
+        top: 0;
+
+        margin-right: 16px;
+
+        transform: scale(.8) rotate(-149.67deg);
+    }
+
+    .partners_schema .item5:after
+    {
+        margin-right: -70px;
+        margin-bottom: 20px;
+
+        transform: scale(.8) rotate(-78.32deg);
+    }
+
+
+    .partners_schema .item .number
+    {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+
+    .partners_schema .img1,
+    .partners_schema .img2,
+    .partners_schema .img3
+    {
+        width: 160px;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .managers
+    {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+
+    .contacts_block .managers .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        min-height: 0;
+    }
+
+
+    .contacts_block .managers .row
+    {
+        justify-content: center;
+    }
+
+    .contacts_block .managers .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    .contacts_block .download
+    {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    .contacts_block .download:before
+    {
+        left: -24px;
+
+        width: 100vw;
+    }
+
+
+    .contacts_block .download .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        min-height: 0;
+    }
+
+
+
+    /*--------------------
+        Partners order
+    --------------------*/
+    .partners_order .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .partners_order .info
+    {
+        width: calc(100% - 332px);
+    }
+
+    .partners_order .info2
+    {
+        display: none;
+    }
+
+
+    .partners_order .title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+    .partners_order .desc
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin-top: 24px;
+    }
+
+
+    .partners_order .img
+    {
+        top: -32px;
+        right: 0;
+        left: auto;
+
+        width: 400px;
+
+        transform: none;
+    }
+
+
+    .partners_order .form .input
+    {
+        font-size: 16px;
+    }
+
+    .partners_order .form .submit_btn
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -877,10 +1273,4 @@
 
         text-align: center;
     }
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
 }

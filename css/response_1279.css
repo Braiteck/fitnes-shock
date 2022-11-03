@@ -964,6 +964,398 @@
 
 
 
+    /*-------------------
+        Partners head
+    -------------------*/
+    .partners_head
+    {
+        padding: 80px 0;
+    }
+
+
+    .partners_head .data
+    {
+        width: 520px;
+    }
+
+
+    .partners_head .title
+    {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+
+    .partners_head .desc
+    {
+        font-size: 18px;
+
+        width: 416px;
+        margin-top: 20px;
+    }
+
+    .partners_head .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .partners_head .btn
+    {
+        margin-top: 40px;
+        padding: 8px 32px;
+    }
+
+
+    .partners_head .big_title
+    {
+        font-size: 100px;
+        line-height: 66px;
+
+        right: 0;
+        bottom: 0;
+
+        margin-right: 0;
+    }
+
+
+    .partners_head .img
+    {
+        top: -64px;
+        right: -100px;
+
+        width: 880px;
+        margin-right: 0;
+    }
+
+
+
+    /*------------------
+        Partners why
+    ------------------*/
+    .partners_why
+    {
+        padding: 80px 0;
+    }
+
+
+    .partners_why .block_title
+    {
+        font-size: 40px;
+        line-height: 44px;
+
+        margin-bottom: 64px;
+    }
+
+
+    .partners_why .block_title div:before,
+    .partners_why .block_title div:after
+    {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+
+    .partners_why .block_title div:after
+    {
+        margin-left: 16px;
+    }
+
+
+    .partners_why .row
+    {
+        margin-bottom: -48px;
+        margin-left: -64px;
+        padding: 0 24px;
+    }
+
+    .partners_why .row > *
+    {
+        width: calc(50% - 64px);
+        margin-bottom: 48px;
+        margin-left: 64px;
+    }
+
+
+    .partners_why .item
+    {
+        font-size: 18px;
+
+        padding-left: 68px;
+    }
+
+    .partners_why .item .number:before
+    {
+        font-size: 60px;
+
+        top: -14px;
+    }
+
+    .partners_why .item .name
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+
+    /*--------------------------
+        Production warehouse
+    --------------------------*/
+    .production_warehouse
+    {
+        padding: 80px 0;
+    }
+
+
+    .production_warehouse .block_title
+    {
+        font-size: 40px;
+        line-height: 44px;
+
+        margin-bottom: 64px;
+    }
+
+
+    .production_warehouse .block_title div:before,
+    .production_warehouse .block_title div:after
+    {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+
+    .production_warehouse .block_title div:after
+    {
+        margin-left: 16px;
+    }
+
+
+    .production_warehouse .image
+    {
+        width: 500px;
+        margin-top: 0;
+        margin-left: -24px;
+    }
+
+
+    .production_warehouse .data
+    {
+        width: calc(100% - 500px);
+    }
+
+
+    .production_warehouse .item .val,
+    .production_warehouse .item .val.big_h
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .production_warehouse .item .val sup
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .production_warehouse .item .val span + span
+    {
+        margin-left: 36px;
+    }
+
+
+
+    /*---------------------
+        Partners schema
+    ---------------------*/
+    .partners_schema
+    {
+        padding: 80px 0;
+    }
+
+
+    .partners_schema .block_title
+    {
+        font-size: 40px;
+        line-height: 44px;
+
+        margin-bottom: 44px;
+    }
+
+
+    .partners_schema .block_title div:before,
+    .partners_schema .block_title div:after
+    {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+
+    .partners_schema .block_title div:after
+    {
+        margin-left: 16px;
+    }
+
+
+    .partners_schema .schema
+    {
+        width: 800px;
+        height: 560px;
+    }
+
+
+    .partners_schema .item
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .partners_schema .item .number
+    {
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+
+    .partners_schema .img1,
+    .partners_schema .img2,
+    .partners_schema .img3
+    {
+        width: 200px;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .managers
+    {
+        padding: 60px 40px 60px 0;
+    }
+
+
+    .contacts_block .managers .block_title
+    {
+        font-size: 25px;
+        line-height: 31px;
+
+        min-height: 62px;
+        margin-bottom: 32px;
+    }
+
+
+    .contacts_block .manager .name
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts_block .manager .post
+    {
+        font-size: 15px;
+
+        margin-top: 4px;
+    }
+
+
+    .contacts_block .manager .phone
+    {
+        font-size: 17px;
+
+        margin-top: 8px;
+    }
+
+
+    .contacts_block .manager .email
+    {
+        font-size: 13px;
+
+        margin-top: 4px;
+    }
+
+
+    .contacts_block .managers .consult_btn
+    {
+        margin-top: 32px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+
+    .contacts_block .download
+    {
+        padding: 60px 0 60px 40px;
+    }
+
+
+    .contacts_block .download .block_title
+    {
+        font-size: 25px;
+        line-height: 31px;
+
+        min-height: 62px;
+        margin-bottom: 32px;
+    }
+
+
+    .contacts_block .download .link
+    {
+        margin-top: 32px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+
+    /*--------------------
+        Partners order
+    --------------------*/
+    .partners_order .head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .partners_order .title
+    {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .partners_order .info2 .title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .partners_order .info2 .title span
+    {
+        font-size: 48px;
+        line-height: 40px;
+    }
+
+
+    .partners_order .desc
+    {
+        font-size: 22px;
+        line-height: 30px;
+
+        margin-top: 32px;
+    }
+
+
+    .partners_order .img
+    {
+        top: -32px;
+
+        width: 400px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
