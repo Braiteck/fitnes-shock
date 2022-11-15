@@ -66,10 +66,6 @@
 
 							<button class="partner_btn modal_btn" data-content="#partner_modal">Стать партнёром</button>
 
-							<button class="mob_menu_btn">
-								<span></span>
-							</button>
-
 							<nav class="menu row">
 								<div class="item modal_cont">
 									<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
@@ -142,6 +138,43 @@
 				</header>
 
 
+				<section class="mob_header">
+					<div class="cont">
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="links">
+							<a href="/" class="link">
+								<div class="thumb">
+									<img data-src="images/mob_header_links_thumb1.svg" alt="" class="lozad">
+								</div>
+								<div>Каталог</div>
+							</a>
+
+							<a href="/" class="link">
+								<div class="thumb">
+									<img data-src="images/mob_header_links_thumb2.svg" alt="" class="lozad">
+								</div>
+								<div>Полезный блог</div>
+							</a>
+
+							<a href="/" class="link">
+								<div class="thumb">
+									<img data-src="images/mob_header_links_thumb3.svg" alt="" class="lozad">
+								</div>
+								<div>Партнёрам</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
 				<section id="mob_menu">
 					<div class="catalog">
 						<a href="/" class="category color1">
@@ -173,16 +206,61 @@
 								<span>Весь каталог</span>
 							</a>
 						</div>
+					</div>
 
-						<div class="other">
-							<div><a href="/">Для перекуса для зала к кофе</a></div>
-							<div><a href="/">Без глютена</a></div>
+
+					<div class="links">
+						<div><a href="/">О нас</a></div>
+						<div><a href="/">Полезный блог</a></div>
+						<div><a href="/">Где купить</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+
+
+					<div class="shops">
+						<div class="title">Купить на</div>
+
+						<div class="row">
+							<a href="/" class="item">
+								<div class="logo">
+									<img data-src="images/tmp/shop_logo1.png" alt="" class="lozad">
+								</div>
+								<div>OZON</div>
+							</a>
+
+							<a href="/" class="item">
+								<div class="logo">
+									<img data-src="images/tmp/shop_logo3.png" alt="" class="lozad">
+								</div>
+								<div class="red">Яндекс маркет</div>
+							</a>
+
+							<a href="/" class="item">
+								<div class="logo">
+									<img data-src="images/tmp/shop_logo2.png" alt="" class="lozad">
+								</div>
+								<div>WILDBERRIES</div>
+							</a>
+
+							<a href="/" class="item">
+								<div class="logo">
+									<img data-src="images/tmp/shop_logo5.png" alt="" class="lozad">
+								</div>
+								<div>Казань экспресс</div>
+							</a>
+
+							<a href="/" class="item">
+								<div class="logo">
+									<img data-src="images/tmp/shop_logo4.png" alt="" class="lozad">
+								</div>
+								<div>Алиэкспресс</div>
+							</a>
 						</div>
 					</div>
 
 
 					<div class="contacts">
-						<div class="phone">
+						<!-- <div class="phone">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
 
 							<a href="tel:+74954678436">+7 495 467 84 36</a>
@@ -190,7 +268,7 @@
 							<a href="/" class="whatsapp_link">
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
 							</a>
-						</div>
+						</div> -->
 
 						<div class="email">
 							<a href="mailto:info@fitnesshock.ru">
@@ -240,7 +318,7 @@
 						</div>
 
 						<div class="row">
-							<div class="item">
+							<div class="item animate fadeInUp">
 								<div class="number"></div>
 
 								<div class="name">Натуральный состав продукта и вкус.</div>
@@ -248,7 +326,7 @@
 								<div class="desc">Мы уделяем большое внимание на разработку рецептур и подбору ингредиентов.</div>
 							</div>
 
-							<div class="item">
+							<div class="item animate fadeInUp delay">
 								<div class="number"></div>
 
 								<div class="name">В тренде здоровые перекусы.</div>
@@ -256,13 +334,13 @@
 								<div class="desc">Лучше съесть протеиновый батончик, чем упаковку чипсов.</div>
 							</div>
 
-							<div class="item">
+							<div class="item animate fadeInUp delay2">
 								<div class="number"></div>
 
 								<div class="name">Современная и яркая упаковка, которая привлекает покупателей.</div>
 							</div>
 
-							<div class="item">
+							<div class="item animate fadeInUp delay3">
 								<div class="number"></div>
 
 								<div class="name">Наш бренд развивается очень быстро.</div>
@@ -286,25 +364,25 @@
 							</div>
 
 							<div class="data">
-								<div class="item">
+								<div class="item animate fadeInRight">
 									<div class="val big_h">2000 м<sup>2</sup></div>
 
 									<div class="desc">Полностью автоматизированное собственное производство с новым современным оборудованием - 2000 м<sup>2</sup></div>
 								</div>
 
-								<div class="item">
+								<div class="item animate fadeInRight delay">
 									<div class="val big_h">1000 м<sup>2</sup></div>
 
 									<div class="desc">Собственный склад в Тольятти и дополнительный удаленный склад в Москве - 1000 м<sup>2</sup></div>
 								</div>
 
-								<div class="item">
+								<div class="item animate fadeInRight delay2">
 									<div class="val">Собственная лаборатория</div>
 
 									<div class="desc">Собственная лаборатория позволяет нам создавать и запускать новые продукты в кратчайшие сроки</div>
 								</div>
 
-								<div class="item">
+								<div class="item animate fadeInRight delay3">
 									<div class="val"><span>Москва</span> <span>Тольятти</span></div>
 
 									<div class="desc">Два офиса в Москве и Тольятти</div>
@@ -823,6 +901,7 @@
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="js/parallax.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

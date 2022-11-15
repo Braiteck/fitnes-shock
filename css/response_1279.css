@@ -95,6 +95,29 @@
 
 
 
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .load_more
+    {
+        margin-bottom: 30px;
+    }
+
+    .pagination .load_more .btn
+    {
+        font-size: 18px;
+
+        width: 360px;
+    }
+
+
+    .pagination .links a
+    {
+        font-size: 18px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -223,12 +246,18 @@
     /*----------------
         Typography
     ----------------*/
+    .text_block h1
+    {
+        font-size: 36px;
+        line-height: 116%;
+    }
+
     .text_block h2
     {
         font-size: 28px;
         line-height: 116%;
 
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
     }
 
     .text_block h3
@@ -236,7 +265,7 @@
         font-size: 26px;
         line-height: 116%;
 
-        margin-bottom: 16px;
+        margin-bottom: 16px !important;
     }
 
     .text_block h4
@@ -244,7 +273,7 @@
         font-size: 24px;
         line-height: 116%;
 
-        margin-bottom: 16px;
+        margin-bottom: 16px !important;
     }
 
 
@@ -1352,6 +1381,498 @@
         top: -32px;
 
         width: 400px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------
+        Prizzes
+    -------------*/
+    .prizzes .block_title img
+    {
+        width: 440px;
+    }
+
+
+    .prizzes .draw_conditions
+    {
+        padding: 60px 60px 60px 88px;
+    }
+
+
+    .prizzes .draw_conditions .data
+    {
+        width: 400px;
+        padding-top: 20px;
+    }
+
+    .prizzes .draw_conditions .data:after
+    {
+        right: -48px;
+        bottom: -84px;
+
+        width: 152px;
+        height: 110px;
+    }
+
+
+    .prizzes .draw_conditions .data .title
+    {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .prizzes .draw_conditions .data .title:before
+    {
+        margin-right: 12px;
+    }
+
+    .prizzes .draw_conditions .data .title:after
+    {
+        margin-left: 0;
+    }
+
+
+    .prizzes .draw_conditions .data .desc
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        width: 356px;
+        margin-top: 16px;
+    }
+
+
+    .prizzes .draw_conditions .form
+    {
+        width: 360px;
+    }
+
+    .prizzes .draw_conditions .form .title
+    {
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .prizzes .prize_fund
+    {
+        margin-top: 40px;
+    }
+
+
+    .prizzes .prize_fund .title
+    {
+        margin-bottom: 40px;
+    }
+
+    .prizzes .prize_fund .title img
+    {
+        width: 360px;
+    }
+
+
+    .prizzes .prize_fund .place .info
+    {
+        padding-bottom: 32px;
+    }
+
+    .prizzes .prize_fund .place .info1:before
+    {
+        left: 24px;
+
+        width: 472px;
+        height: 416px;
+    }
+
+    .prizzes .prize_fund .place .info2:before
+    {
+        width: 424px;
+        height: 408px;
+    }
+
+    .prizzes .prize_fund .place .info3:before
+    {
+        width: 428px;
+        height: 380px;
+    }
+
+
+    .prizzes .prize_fund .place .name
+    {
+        font-size: 28px;
+        line-height: 32px;
+
+        padding: 8px 40px;
+    }
+
+
+    .prizzes .prize_fund .place .thumb,
+    .prizzes .prize_fund .place .info3 .thumb
+    {
+        height: 292px;
+    }
+
+    .prizzes .prize_fund .place .thumb img
+    {
+        transform: translateX(-50%) scale(.8);
+    }
+
+
+    .prizzes .prize_fund .place .desc
+    {
+        font-size: 18px;
+    }
+
+    .prizzes .prize_fund .place .desc > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .prizzes .bottom_text
+    {
+        font-size: 19px;
+
+        margin-top: 48px;
+        padding: 40px 40px 108px;
+    }
+
+    .prizzes .bottom_text > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .prizzes .bottom_text .bg
+    {
+        padding: 20px 36px;
+    }
+
+    .prizzes .bottom_text .bg b:before
+    {
+        top: -4px;
+        left: -36px;
+    }
+
+
+
+    .prizzes .join
+    {
+        padding: 80px 0 48px;
+    }
+
+
+    .prizzes .join .btn
+    {
+        font-size: 17px;
+        line-height: 19px;
+
+        padding: 16px 28px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        padding: 60px 0;
+    }
+
+
+    .about_head .block_title
+    {
+        font-size: 40px;
+        line-height: 44px;
+
+        margin-bottom: 48px;
+    }
+
+    .about_head .block_title div:before,
+    .about_head .block_title div:after
+    {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+
+    .about_head .block_title div:after
+    {
+        margin-left: 16px;
+    }
+
+
+    .about_head .text_block
+    {
+        font-size: 18px;
+
+        width: calc(100% - 504px);
+    }
+
+
+    .about_head .img
+    {
+        top: 12px;
+        right: 0;
+
+        width: 480px;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------------
+        Brand founded
+    -------------------*/
+    .brand_founded
+    {
+        padding: 60px 0;
+    }
+
+
+    .brand_founded .col_left
+    {
+        width: calc(50% - 24px);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    .brand_founded .data
+    {
+        padding: 32px;
+    }
+
+
+    .brand_founded .text_block
+    {
+        line-height: 140%;
+    }
+
+
+    .brand_founded .more
+    {
+        margin-top: 28px;
+        padding-left: 48px;
+    }
+
+
+    .brand_founded .more .pre_title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .brand_founded .more .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .brand_founded .more .title span
+    {
+        font-size: 66px;
+        line-height: 58px;
+    }
+
+
+
+    /*-----------
+        We do
+    -----------*/
+    .we_do
+    {
+        padding: 192px 0 52px;
+    }
+
+
+    .we_do .data
+    {
+        width: 356px;
+    }
+
+
+    .we_do .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+    .we_do .block_head .title
+    {
+        font-size: 32px;
+
+        padding-bottom: 8px;
+    }
+
+
+    .we_do .sub_title
+    {
+        font-size: 20px;
+    }
+
+
+    .we_do .text_block
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+
+    /*---------------
+        Easy find
+    ---------------*/
+    .easy_find .data
+    {
+        padding: 32px;
+    }
+
+
+    .easy_find .text_block
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+
+    /*------------------
+        Achievements
+    ------------------*/
+    .achievements
+    {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+
+    .achievements .data
+    {
+        width: 480px;
+    }
+
+
+    .achievements .text_block
+    {
+        line-height: 140%;
+    }
+
+
+    .achievements .item img
+    {
+        max-width: 180px;
+        max-height: 140px;
+    }
+
+
+    .achievements .image
+    {
+        width: calc(100% - 508px);
+        margin-top: 0;
+        margin-right: -24px;
+
+        align-self: center;
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team
+    {
+        padding-bottom: 24px;
+    }
+
+
+    .team .head
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .team .head .anchors
+    {
+        width: calc(50% - 32px);
+        padding: 32px 0;
+
+        column-gap: 32px;
+    }
+
+
+    .team .head .anchors .btn
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .team .head .text_block
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        padding: 32px;
+    }
+
+
+    .team .section .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+    .team .section .block_head .title
+    {
+        font-size: 32px;
+        line-height: 38px;
+
+        padding-bottom: 8px;
+    }
+
+
+    .team .row > *
+    {
+        width: calc(20% - 20px);
+    }
+
+
+    .team .person .quote
+    {
+        font-size: 14px;
+        line-height: 120%;
+
+        padding: 16px;
+    }
+
+
+    .team .person .name
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+    .team .person .post
+    {
+        line-height: 140%;
+
+        margin-top: 12px;
     }
 
 

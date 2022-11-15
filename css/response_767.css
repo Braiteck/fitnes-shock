@@ -160,15 +160,34 @@
     /*-----------------
         Main slider
     -----------------*/
+    .main_slider
+    {
+        background: none;
+    }
+
+
+    .main_slider .swiper-container
+    {
+        padding: 0 24px;
+    }
+
+    .main_slider .slide
+    {
+        border-radius: 6px;
+    }
+
+
     .main_slider .slide .cont
     {
-        min-height: 320px;
-        padding-bottom: 44px;
+        min-height: 0;
+        padding-bottom: 0;
     }
 
 
     .main_slider .slide .info
     {
+        display: none;
+
         width: 240px;
     }
 
@@ -185,9 +204,10 @@
     }
 
 
-
     .main_slider .slide .image
     {
+        display: none;
+
         width: 100%;
     }
 
@@ -198,6 +218,12 @@
 
         max-width: none;
         max-height: 280px;
+    }
+
+
+    .main_slider .slide .mob_image
+    {
+        display: block;
     }
 
 
@@ -214,6 +240,8 @@
     {
         bottom: 28px;
         left: 24px;
+
+        display: none;
     }
 
 
@@ -488,6 +516,14 @@
     /*----------------
         Advantages
     ----------------*/
+    .advantages.bg_white
+    {
+        padding: 24px 0;
+
+        background: none;
+    }
+
+
     .advantages .data
     {
         padding: 0;
@@ -530,17 +566,59 @@
     {
         display: inline-block;
 
-        width: 240px;
+        width: 266px;
         max-width: none;
+        min-height: 180px;
         margin: 0;
+        padding: 20px;
 
         vertical-align: top;
         white-space: normal;
+
+        border-radius: 6px;
+        background: #fff;
     }
 
     .advantages .row > * + *
     {
-        margin-left: 20px;
+        margin-left: 12px;
+    }
+
+
+    .advantages .item
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        position: relative;
+    }
+
+
+    .advantages .item .icon
+    {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+        width: 64px;
+        height: 64px;
+        margin: 0;
+    }
+
+    .advantages .item .name
+    {
+        font-size: 16px;
+
+        display: flex;
+
+        min-height: 64px;
+        margin-bottom: 16px;
+        padding-left: 81px;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
 
@@ -907,6 +985,441 @@
     {
         width: 100%;
         margin-top: 8px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-left: 0;
+    }
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------
+        Prizzes
+    -------------*/
+    .prizzes
+    {
+        padding-top: 52px;
+    }
+
+
+    .prizzes .block_title
+    {
+        margin-bottom: 32px;
+    }
+
+    .prizzes .block_title img
+    {
+        width: 324px;
+    }
+
+
+    .prizzes .draw_conditions
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 40px 60px;
+
+        background: url(../images/mob_bg_prizzes_draw_conditions.png) 50%/100% 100% no-repeat;
+    }
+
+
+    .prizzes .draw_conditions .data .title
+    {
+        font-size: 32px;
+        line-height: 100%;
+
+        width: 188px;
+        margin: 0 auto;
+    }
+
+
+    .prizzes .draw_conditions .data .desc
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .prizzes .draw_conditions .form
+    {
+        margin: 0 auto;
+    }
+
+    .prizzes .draw_conditions .form .title
+    {
+        display: none;
+    }
+
+
+
+    .prizzes .prize_fund .title img
+    {
+        width: 280px;
+    }
+
+
+    .prizzes .prize_fund .place .info1:before
+    {
+        left: 20px;
+
+        width: 424px;
+        height: 376px;
+    }
+
+    .prizzes .prize_fund .place .info2:before
+    {
+        width: 376px;
+        height: 360px;
+    }
+
+    .prizzes .prize_fund .place .info3:before
+    {
+        width: 388px;
+        height: 344px;
+    }
+
+
+    .prizzes .prize_fund .place .thumb,
+    .prizzes .prize_fund .place .info3 .thumb
+    {
+        height: 256px;
+    }
+
+    .prizzes .prize_fund .place .thumb img
+    {
+        transform: translateX(-50%) scale(.7);
+    }
+
+
+    .prizzes .prize_fund .place .name
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+    .prizzes .bottom_text
+    {
+        font-size: 17px;
+
+        padding: 24px 24px 64px;
+    }
+
+
+
+    .prizzes .join
+    {
+        padding: 64px 96px 32px;
+    }
+
+
+    .prizzes .join .btn
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        padding: 12px 24px;
+    }
+
+    .prizzes .join .btn:before,
+    .prizzes .join .btn:after
+    {
+        bottom: -20px;
+
+        width: 72px;
+        height: 52px;
+        margin-right: 12px;
+    }
+
+    .prizzes .join .btn:after
+    {
+        margin-left: 12px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .about_head .block_title
+    {
+        font-size: 32px;
+        line-height: 36px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .about_head .block_title div:before,
+    .about_head .block_title div:after
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .about_head .text_block
+    {
+        width: 100%;
+    }
+
+
+    .about_head .img
+    {
+        position: relative;
+        bottom: 0;
+
+        width: 360px;
+        margin: 40px auto 0;
+    }
+
+
+
+    /*-------------------
+        Brand founded
+    -------------------*/
+    .brand_founded .data
+    {
+        padding: 28px;
+    }
+
+
+    .brand_founded .more .pre_title
+    {
+        font-size: 24px;
+    }
+
+
+    .brand_founded .more .title
+    {
+        font-size: 26px;
+    }
+
+    .brand_founded .more .title span
+    {
+        font-size: 56px;
+        line-height: 50px;
+    }
+
+
+
+    /*-----------
+        We do
+    -----------*/
+    .we_do
+    {
+        padding: 132px 0 52px;
+    }
+
+
+    .we_do .data
+    {
+        width: 79%;
+    }
+
+
+    .we_do .block_head .title
+    {
+        font-size: 28px;
+    }
+
+
+    .we_do .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .we_do .text_block
+    {
+        font-size: 16px;
+    }
+
+
+    .we_do .bg
+    {
+        object-position: 75% 50%;
+    }
+
+
+
+    /*---------------
+        Easy find
+    ---------------*/
+    .easy_find .data
+    {
+        padding: 28px 28px 260px;
+    }
+
+
+    .easy_find .img
+    {
+        height: 248px;
+    }
+
+
+
+    /*------------------
+        Achievements
+    ------------------*/
+    .achievements .data
+    {
+        width: 100%;
+    }
+
+
+    .achievements .item img
+    {
+        max-width: 140px;
+        max-height: 80px;
+    }
+
+
+    .achievements .image
+    {
+        display: none;
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .team .head .text_block
+    {
+        padding: 28px;
+    }
+
+
+    .team .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row.default
+    {
+        margin-bottom: -6px;
+        margin-left: -6px;
+
+        --products_count: 2;
+    }
+
+    .products .row.default > *
+    {
+        width: calc(50% - 6px);
+        margin-bottom: 6px;
+        margin-left: 6px;
+    }
+
+
+    .products .row.default .product .articul
+    {
+        font-weight: 400;
+
+        position: relative;
+        top: 0;
+        right: 0;
+
+        margin-bottom: 11px;
+    }
+
+    .products .row.default .product .price .unit
+    {
+        font-size: 13px;
+        line-height: 130%;
+
+        width: 100%;
+        margin-top: 4px;
+
+        order: 4;
+    }
+
+
+    .products .row.default ~ .arrows
+    {
+        display: none;
+    }
+
+
+    .products .swiper-container .slide
+    {
+        width: 260px;
+    }
+
+
+    .products .product
+    {
+        border: 1px solid #f2f2f2;
+        background: #fff;
+    }
+
+
+    .products .product .articul
+    {
+        right: 16px;
+    }
+
+
+    .products .product .info
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .products .product .price
+    {
+        order: 2;
+    }
+
+
+    .products .product .name
+    {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+
+    .products .product .desc
+    {
+        display: none;
     }
 
 

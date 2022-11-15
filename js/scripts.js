@@ -10,7 +10,6 @@ $(() => {
 			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 0,
 			slidesPerView: 1,
 			autoplay: {
 				delay: 5000
@@ -24,6 +23,14 @@ $(() => {
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 16
+				},
+				768: {
+					spaceBetween: 0,
+				}
 			},
 			on: {
 				init: swiper => {
@@ -181,7 +188,7 @@ $(() => {
 	})
 
 
-	// Слайдер в тексте
+	// Карусель товаров
 	const productsSliders = []
 
 	$('.products .swiper-container').each(function (i) {
@@ -191,7 +198,6 @@ $(() => {
 			options = {
 				loop: false,
 				speed: 500,
-				spaceBetween: 2,
 				watchSlidesVisibility: true,
 				slideActiveClass: 'active',
 				slideVisibleClass: 'visible',
@@ -201,18 +207,21 @@ $(() => {
 				},
 				breakpoints: {
 					0: {
+						spaceBetween: 16,
 						slidesPerView: 'auto',
 						simulateTouch: true,
 						allowTouchMove: true,
 						noSwiping: false
 					},
 					1024: {
+						spaceBetween: 2,
 						slidesPerView: 3,
 						simulateTouch: false,
 						allowTouchMove: false,
 						noSwiping: true,
 					},
 					1280: {
+						spaceBetween: 2,
 						slidesPerView: 3,
 						simulateTouch: false,
 						allowTouchMove: false,
@@ -297,6 +306,62 @@ $(() => {
 	})
 
 
+	// Наши десерты
+	const dessertsSliders = []
+
+	$('.desserts .swiper-container').each(function (i) {
+		$(this).addClass('desserts_s' + i)
+
+		let slides = $(this).find('.slide').length,
+			options = {
+				loop: false,
+				speed: 500,
+				watchSlidesVisibility: true,
+				slideActiveClass: 'active',
+				slideVisibleClass: 'visible',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				breakpoints: {
+					0: {
+						spaceBetween: 12,
+						slidesPerView: 'auto',
+						simulateTouch: true,
+						allowTouchMove: true,
+						noSwiping: false
+					},
+					1024: {
+						spaceBetween: 20,
+						slidesPerView: 3,
+						simulateTouch: false,
+						allowTouchMove: false,
+						noSwiping: true,
+					},
+					1280: {
+						spaceBetween: 24,
+						slidesPerView: 4,
+						simulateTouch: false,
+						allowTouchMove: false,
+						noSwiping: true,
+					}
+				}
+			}
+
+		dessertsSliders.push(new Swiper('.desserts_s' + i, options))
+
+		if (slides > dessertsSliders[i].params.slidesPerView) {
+			options.loop = true
+			options.simulateTouch = true
+			options.allowTouchMove = true
+			options.noSwiping = false
+
+			dessertsSliders[i].destroy(true, true)
+			dessertsSliders[i] = new Swiper('.desserts_s' + i, options)
+		}
+	})
+
+
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
 		e.preventDefault()
@@ -361,14 +426,64 @@ $(() => {
 
 
 	// Моб. меню
-	$('header .mob_menu_btn').click((e) => {
+	$('.mob_menu_btn').click((e) => {
 		e.preventDefault()
 
-		$('header .mob_menu_btn').toggleClass('active')
+		$('.mob_menu_btn').toggleClass('active')
 		$('body').toggleClass('menu_open')
 		$('#mob_menu').toggleClass('show')
 		$('.overlay').toggleClass('show')
 	})
+
+
+	// Плавная прокрутка к якорю
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
+
+
+	// Параллакс
+	if ($(window).width() > 1023) {
+		if ($('.parallax').length) {
+			$('.parallax').each(function () {
+				let scene = $(this).attr('id'),
+					parallax = new Parallax(document.getElementById(scene))
+
+				$('#' + scene).addClass('active')
+			})
+		}
+	}
+
+
+	// Animation
+	const boxes = document.querySelectorAll('.animate')
+
+	function scrollTracking(entries) {
+		for (const entry of entries) {
+			if (entry.intersectionRatio >= 0.25 && entry.target.classList.contains('animate')) {
+				entry.target.classList.add('animated')
+			}
+		}
+	}
+
+	const observer = new IntersectionObserver(scrollTracking, {
+		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+	})
+
+	boxes.forEach(element => observer.observe(element))
 })
 
 
@@ -378,6 +493,9 @@ $(window).on('load', () => {
 	$('.products .row').each(function () {
 		productHeight($(this), parseInt($(this).css('--products_count')))
 	})
+
+	// Товары
+	initProductsSliders()
 })
 
 
@@ -388,6 +506,9 @@ $(window).resize(() => {
 		$('.products .row').each(function () {
 			productHeight($(this), parseInt($(this).css('--products_count')))
 		})
+
+		// Товары
+		initProductsSliders()
 	}
 })
 
@@ -408,4 +529,76 @@ function productHeight(context, step) {
 		start = start + step
 		finish = finish + step
 	})
+}
+
+
+
+// Товары
+productsMobSliders = []
+
+function initProductsSliders() {
+	if ($(window).width() > 767) {
+		if ($('.products .mob_row .row').length) {
+			$('.products .mob_row').addClass('swiper-container')
+			$('.products .mob_row .row > *').addClass('swiper-slide')
+			$('.products .mob_row .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.products .swiper-container.mob_row').each(function (i) {
+				$(this).addClass('products_mob_s' + i)
+
+				let options = {
+					loop: false,
+					speed: 500,
+					watchSlidesVisibility: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					breakpoints: {
+						0: {
+							spaceBetween: 16,
+							slidesPerView: 'auto',
+							simulateTouch: true,
+							allowTouchMove: true,
+							noSwiping: false
+						},
+						1024: {
+							spaceBetween: 2,
+							slidesPerView: 3,
+							simulateTouch: false,
+							allowTouchMove: false,
+							noSwiping: true,
+						},
+						1280: {
+							spaceBetween: 2,
+							slidesPerView: 3,
+							simulateTouch: false,
+							allowTouchMove: false,
+							noSwiping: true,
+						}
+					},
+					on: {
+						init: swiper => {
+							setTimeout(() => productHeight($(swiper.$el), $(swiper.$el).find('.product').length))
+						},
+						resize: swiper => {
+							setTimeout(() => productHeight($(swiper.$el), $(swiper.$el).find('.product').length))
+						}
+					}
+				}
+
+				productsMobSliders.push(new Swiper('.products_mob_s' + i, options))
+			})
+		}
+	} else {
+		productsMobSliders.forEach(element => element.destroy(true, true))
+
+		productsMobSliders = []
+
+		$('.products .mob_row').removeClass('swiper-container')
+		$('.products .mob_row .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.products .mob_row .row > *').removeClass('swiper-slide')
+	}
 }
